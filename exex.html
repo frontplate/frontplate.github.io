@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>ungbi</title>
+  </head>
+  <body>
+  <script>
+
+    function Slice(x, y, z){
+      return x.slice(y, z)
+    }
+
+    function ArrangeMonth(){
+      for(let key in 전체글){
+        let a = Slice(key, 1, 3) + '년 ' + Slice(key, 3, 5) + '월';
+        document.write('<p><a href="' + a + '.html">' + a + '</a></p>')
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    background-color:hsl(78, 19%, 28%);
+    color: rgb(211, 218, 195);
+    font: 14px 굴림;
+  }
+
+.a{
+  display: grid;
+  grid-template-columns: 450px 1fr;
+}
+
+.b{
+  padding-top: 10px;
+  line-height: 130%;
+}
+
+.c{
+  font: 14px 굴림;
+  padding-top: 10px;
+  text-align: right;
+}
+
+div{
+  border: 1px solid black none;
+}
+
+h1{
+  border-bottom: 5px solid rgb(211, 218, 195);
+  padding-bottom: 20px;
+  font-family: sunbatang;
+}
+
+h4{
+  border-bottom: 1.5px solid black;
+  padding-bottom: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(211, 218, 195);
+}

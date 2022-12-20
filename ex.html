@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    // 모든 글은 전체글이라는 객체에 속한다. 이 객체에서 원하는 카테고리에 배열될 수 있게 분류한다.
+
+    const 전체글 = {
+      ['+221111'] : {
+        수필 : [1, 2],
+        정체불명 : [3, 4, 5]
+      },
+      ['+221110'] : {
+        수필 : [],
+        정체불명 : [6]
+      },
+      ['+221008'] : {
+        수필 : [10, 11],
+        정체불명 : [12]
+      },
+      ['+220909'] : {
+        수필 : [7, 8, 9],
+        정체불명 : []
+      }
+    }
+
+    const cate = ['수필', '정체불명']
+
+    // 모든 글
+    function GetAllPosts(){
+      let AllPosts = [];
+      for(let key in 전체글){
+        for(i = 0; i < cate.length; i++){
+          if(전체글[key][cate[i]] !== undefined){
+          AllPosts = AllPosts.concat(전체글[key][cate[i]])
+          }
+        }
+      }
+      return AllPosts
+    }
+
+    console.log(GetAllPosts())
+
+    function pppp(){
+      for(j = 0; j < GetAllPosts().length; j++){
+        document.write(GetAllPosts()[j] + '<br>')
+      }
+    }
+
+    pppp()
+
+    document.write('전체글: ' + GetAllPosts() + '<br><br>')
+
+    // 수필
+    function GetByCategory(CategoryName){
+      let CategoryPosts = [];
+      for(let key in 전체글){
+        CategoryPosts = CategoryPosts.concat(전체글[key][CategoryName])
+        }
+        return CategoryPosts
+      }
+
+      document.write('수필: ' + GetByCategory('수필') + '<br><br>')
+      document.write('정체불명: ' + GetByCategory('정체불명') + '<br><br>')
+
+    // 이제 날짜 데이터를 어떻게 자동으로 만들지 생각해봐야한다.
+    const Day = new Date();
+    const FullYear = Day.getFullYear()
+    const ModifiedYear = (FullYear.toString()).slice(2, 4);
+    const ModifiedMonth = Plus0(Day.getMonth())
+    const ModifiedDay = Plus0(Day.getDate())
+    const NowDate = ModifiedYear + ModifiedMonth + ModifiedDay
+    // -> ModifiedYear가 선언할 때 문자열이 돼서 나머지 둘이 숫자라도 문자열로 변환 안 해도 됨!
+    // -> 문자 + 숫자 백만 개 = 문자
+
+    function Plus0(a){
+      if(a < 10){
+        a = '0' + a
+      }
+      return a
+    }
+
+    let NowDateSlice4 = NowDate.slice(0, 4)
+
+    function GetByMonth(x, y){
+      let a = x.toString() + Plus0(y);
+      let b = x.toString() + Plus0(y+1);
+      let c = [];
+      for(let key in 전체글){
+        if(a * 100 < key && key < b * 100){
+          for(i = 0; i < cate.length; i++){
+            c = c.concat(전체글[key][cate[i]])
+          }
+        }
+      }
+      return c
+    }
+
+    document.write(GetByMonth(22, 11))
+
+    function ArrangeMonth(x, y){
+      let a = x + '년 ' + y + '월'
+      for(i = 22; i < ModifiedYear; i++){
+        for(j = 1; j < 32; j++){h
+
+        }
+      }
+      return a
+    }
+
+    document.write(ArrangeMonth(22, 11))
+
+    function ccc(){
+    for(let key in 전체글){
+      document.write(key)
+    }
+  }
+
+
+
+
+
+/*
+
+
+    // 한 자리 수 숫자를 두 자리로 바꾸는 기능
+    // 왠지 숫자 문자 섞이면 오류날 것 같아서 다 문자열로 바꿔줬다.
+    function Plus0(n){
+      if(n < 10){
+        return ('0' + n).toString()
+      }
+      else{
+        return n.toString()
+      }
+    }
+
+// 4자리 날짜 -> 기준용
+
+
+    function DateCalculater4(){
+      let FullDate4 = [];
+        for(y = 22; y < 30; y++){
+          for(i = 1; i < 13; i++){
+            FullDate4 = FullDate4.concat((y + Plus0(i))*100)
+          }
+        }
+        return FullDate4
+      }
+
+
+    function FindKeys(){
+      let keys = [];
+        for(let key in 전체글){
+          keys = keys.concat(key)
+        }
+        return keys
+      }
+
+    function Intersection(x, y){
+      return x.filter(u => y.includes(u))
+    }
+
+    function CommonKeys(){
+      return Intersection(DateCalculater4(), FindKeys())
+    }
+
+    function Date2(x, y){
+      let Date = x.toString() + Plus0(y).toString();
+      return Date
+    }
+
+
+    function SelectBetweenMonth(x, y){
+      let Merger = [];
+      for(i = 0; i < CommonKeys().length; i++){
+        if(Date2(x, y) < CommonKeys()[i] && CommonKeys()[i] < Date2(x, y + 1)){
+          for(j = 0; j < cate.length; j++){
+            Merger = Merger.concat(전체글[CommonKeys()[i]][cate[j]]);
+          }
+        }
+      }
+      return Merger
+    }
+
+    function www(){
+      let a = [];
+      for(i = 22; i < 30; i++){
+        for(j = 1; j < 12; j++){
+          a = a.concat(SelectBetweenMonth(i, j))
+        }
+      }
+      return a
+    }
+
+    function ppp(x, y){
+      a = [];
+      for(i = 0; i < SelectBetweenMonth(x, y).length; i++){
+        a = a.concat(SelectBetweenMonth(x, y)[i])
+      }
+      return a
+    }
+*/
+
+
+
+/*
+    function SelectByMonth(){
+      for(let key in 전체글){
+        for(i = 0; i < FullDate4.length; i++){
+          if(FullDate4[i] < key && key < FullDate4[i+1]){
+            for(j = 0; j < cate.length; j++ ){
+              FullDate4[i], 전체글[key][cate[j]]
+            }
+
+            }
+            //document.write('<br><br>i: ' + a[i] + '<br><br>key: ' + key + '<br><br>i+1: ' + a[i+1])
+            // document.write(1)
+          }
+        }
+      }
+    SelectByMonth()
+*/
+
+/*
+
+
+
+
+// 6자리 날짜 -> 키용 -> 연산이 너무 많아져서 버림
+
+    function DateCalculater6(){
+      let FullDate6 = [];
+      for(y = 20; y < 50; y++){
+        for(i = 1; i < 13; i++){
+            for(j = 1; j < 32; j++){
+              FullDate6 = FullDate6.concat(y + Plus0(i) + Plus0(j))
+            }
+          }
+        }
+      return FullDate6;
+    }
+
+    function DateCalculater4(){
+      let FullDate4 = [];
+        for(y = 22; y < 30; y++){
+          for(i = 1; i < 13; i++){
+            FullDate4 = FullDate4.concat((y + Plus0(i))*100)
+          }
+        }
+        return FullDate4
+      }
+
+    let FullDate4 = DateCalculater4()
+
+
+    function SelectBetweenMonth(x, y){
+      let Merger = [];
+      for(let key in 전체글){
+      if(Date2(x, y) < key && key < Date2(x, y + 1)){
+        for(i = 0; i < cate.length; i++){
+        Merger = Merger.concat(전체글[key][cate[i]]);
+      }
+    }
+  }
+  return Merger
+}
+
+function Date4(){
+  let Date4 = [];
+  for(i = 22; i < 99; i++){
+    for(j = 0; j < 13; j++){
+      Date4 = Date4.concat(i.toString() + j.toString())
+    }
+  }
+  return Date4
+}
+
+
+
+function Date3(){
+  let Date4 = null;
+  for(i = 22; i < 24; i++){
+    for(j = 0; j < 13; j++){
+      Date4 = SelectBetweenMonth(i, j)
+    }
+  }
+  return Date4
+}
+*/
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
