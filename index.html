@@ -2,9 +2,92 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>frontplate</title>
+    <style media="screen">
+
+      @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
+      @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      body{
+        font: 400 14px 'Pretendard-Regular';
+      }
+
+      div{
+        border: 1px solid black;
+      }
+
+      .Container1{
+        display: grid;
+        grid-template-columns: 1fr 800px 1fr;
+      }
+
+      .Container2{
+        display: grid;
+        grid-template-columns: 150px 500px 150px;
+        grid-template-rows: 150px 30px 30px 1fr;
+      }
+
+      .BlogNameSpace{
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      #BlogName{
+        font: 700 2.3em 'Courier Prime', monospace;
+      }
+
+      #Date{
+        margin: 0;
+      }
+
+      #Subject{
+        margin: 0;
+      }
+
+      </style>
   </head>
   <body>
-    ungbi (maybe..) will comeback soon
+    <div class = "Container1">
+
+      <div style = "text-align: center;"></div>
+      <div class = "Container2">
+
+        <div class="BlogNameSpace">
+          <p id="BlogName">frontplate</p>
+          </div>
+        <div class="">2</div>
+        <div class="DateSpace">
+          <p id="Date">2022년 12월 21일</p>
+          </div>
+        <div class="">4</div>
+        <div class="">5</div>
+        <div class="SubjectSpace">
+          <p id="Subject">콘텐츠 제목</p>
+          </div>
+        <div class="">6</div>
+        <div class="">7</div>
+        <div class="ContentSpace">
+          <p id="Content">본문</p>
+          </div>
+        <div class="SidebarSpace">
+          <p id="Category">카테고리별 분류</p>
+          <p>코딩</p>
+          <p>수필</p>
+
+          <p id="Month">월별 분류</p>
+          <p>몇 년 몇 월</p>
+          <p>몇 년 몇 월</p>
+          </div>
+
+        </div>
+      <div style = "text-align: center;"></div>
+
+      </div>
   </body>
 </html>
