@@ -125,6 +125,7 @@ if(category2Page !== null){
 // 월별 게시물 페이지
 const datePage9303 = document.querySelector('.datePage9303');
 const datePage1607 = document.querySelector('.datePage1607');
+const datePage1611 = document.querySelector('.datePage1611');
 const datePage1709 = document.querySelector('.datePage1709');
 const datePage1710 = document.querySelector('.datePage1710');
 const datePage2008 = document.querySelector('.datePage2008');
@@ -149,6 +150,10 @@ if(datePage9303 !== null){
 
 if(datePage1607 !== null){
   datePage1607.innerHTML = array_s_b_YearMonthPage(2016, 7).join('');
+};
+
+if(datePage1611 !== null){
+  datePage1611.innerHTML = array_s_b_YearMonthPage(2016, 11).join('');
 };
 
 if(datePage1709 !== null){
