@@ -166,7 +166,7 @@ a:hover{
   color: white;
   font: 11px 'D2Coding';
   letter-spacing: 1px;
-  padding: 3.5px 4.5px;
+  padding: 3.5px 4.5px 2px 4.5px;
 }
 
 .s_h_subject{
@@ -189,6 +189,27 @@ a:hover{
 img {
   margin: auto;
   display: block;
+}
+
+.h_blogName button{
+cursor: pointer;
+font-family: 'gulim', 'arial';
+font-weight: bold;
+border: 1px solid;
+}
+
+.mac .h_blogName button{
+  cursor: pointer;
+  font-family: 'D2Coding', 'menlo', 'arial';
+  font-weight: bold;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
 }
 
 /* .mac .ContentSpace{

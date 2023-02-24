@@ -103,7 +103,7 @@ const s_s_byDate_listBtn = document.querySelector('.s_s_byDate_listBtn');
 title.innerHTML = 'ooooongb'
 
 // 블로그 이름
-h_blogName.innerHTML = "<button style = 'font-weight: bold'>ooooongb</button>"
+h_blogName.innerHTML = "<button>ooooongb</button>"
 
 // 모든 글 페이지
 if(allPostPage !== null){
