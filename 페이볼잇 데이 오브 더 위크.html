@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ungbi</title>
+    <title></title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="javascript/script.js"></script>
   </head>
   <body>
-    <!-- 바깥쪽 컨테이너 -->
-    <div class = "Container1">
-
+    <div class = "container1">
       <div></div>
-      <!-- 안쪽 컨테이너 -->
-      <div class = "Container2">
+      <div class = "container2">
         <!-- 블로그 이름 -->
-        <div class="BlogNameSpace">
-          <p id = "BlogName"><a href = "index.html" style = "text-decoration: none">ungbi</a></p>
+        <div class="head_blogName">
+          <a href = "index.html" class = "h_blogName"></a>
           </div>
         <div></div>
         <!-- 날짜 -->
-        <div class="DateSpace">
-          <p id="Date">2020년 8월 20일 묙요일</p>
+        <div class="section_head_date">
+          <div class="s_h_date">
+            2020년 8월 20일 묙요일
+          </div>
           </div>
         <div></div>
         <div></div>
         <!-- 제목 -->
-        <div class="SubjectSpace">
-          <h1 id="Subject">페이볼잇 데이 오브 더 위크</h1>
+        <div class="section_head_subject">
+          <h1 class="s_h_subject">
+            페이볼잇 데이 오브 더 위크
+          </h1>
           </div>
         <div></div>
         <div></div>
         <!-- 본문 -->
-        <div class="ContentSpace">
+        <div class="section_body">
           <br><img src="img\페이볼잇 데이 오브 더 위크_img.png" alt="" width = "300px"><br>
           <p>한동안은 좋아하는 요일이랄 게 없었다. 직장을 그만두고선 무슨 요일이든 그날이 그날이게 돼버렸던 것이다. 그렇게 요일이야 알 게 뭐람, 이라는 태도로 3일이든 10일이든 내 멋대로 시간의 단위를 묶어 지내다 보니, 종종 요일을 떠올려내야 할 때면 일상 속에 그것을 추론해낼 단서가 마땅치 않아 이거야 난감해지곤 했다. 이전엔 분명 그렇지 않았다. 시간을 평일과 주말, 그러니까 7일 단위로 단단히 묶어두고는 요일 뒤에 물음표가 찍히자마자 오늘은 뭘 했으니까(혹은 해야 하니까) 무슨 요일이겠다, 라는 식으로 번쩍번쩍 떠올려내곤 했다.</p>
           <p>당일의 요일을 맞춰보려 낑낑대다 보면, 문득 과거엔 확실히 다른 사람들과 함께여야만 하는 일들을 하며 살았었구나, 라는 실감이 들었다. 요일이라는 것도 결국은 누군가와 무언가를 함께 해나가기 위한 일종의 협업 툴일 테니까. 요일 감각을 상비하고 다녀야 했던 시절이 꽤 먼 일처럼 느껴졌다. 사실 그렇게 멀어진 일은 아니었는데도. 당시까지도 룸미러 안에 분명히 맺혀 있었다. 아주 작게 보이긴 했지만.</p>
@@ -47,29 +47,11 @@
           <p>그러고 보니 일요일을 다시금 좋아하게 된 이유를 말하는 걸 잊었는데, 그것은 일요일엔 헬스장이 열지 않기 때문이다. 그날만큼은 아무리 출석하고 싶어도 관장님 쪽에서 거절이다. 오늘은 일요일인 걸 까먹고 헬스장에 갔다. 굳게 닫힌 문 앞에서 한껏 행복해졌다.</p>
           </div>
           <!-- 사이드바 -->
-        <div class="SidebarSpace">
-          <!-- 카테고리별 -->
-          <span id="Sidebar1">카테고리별 분류<br><br></span>
-          <script>
-            Sidebar_List_AllPosts();
-            Sidebar_List_Category();
-          </script>
-
-          <br>
-          <br>
-          <br>
-          <!-- 월별 -->
-          <span id="Sidebar2">월별 분류<br><br></span>
-          <script>
-            Sidebar_List_YearMonth();
-          </script>
-          </div>
-
-
+        <div class="section_sidebar">
         </div>
-      <div></div>
-      <div class="GridBottom"></div>
-
       </div>
+      <div class="bottom"></div>
+    </div>
+      <script src="javascript/script.js"></script>
   </body>
 </html>

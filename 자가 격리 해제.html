@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ungbi</title>
+    <title></title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="javascript/script.js"></script>
   </head>
   <body>
-    <!-- 바깥쪽 컨테이너 -->
-    <div class = "Container1">
-
+    <div class = "container1">
       <div></div>
-      <!-- 안쪽 컨테이너 -->
-      <div class = "Container2">
+      <div class = "container2">
         <!-- 블로그 이름 -->
-        <div class="BlogNameSpace">
-          <p id = "BlogName"><a href = "index.html" style = "text-decoration: none">ungbi</a></p>
+        <div class="head_blogName">
+          <a href = "index.html" class = "h_blogName"></a>
           </div>
         <div></div>
         <!-- 날짜 -->
-        <div class="DateSpace">
-          <p id="Date">2021년 07월 28일 수요일</p>
+        <div class="section_head_date">
+          <div class="s_h_date">
+            2021년 07월 28일 수요일
+          </div>
           </div>
         <div></div>
         <div></div>
         <!-- 제목 -->
-        <div class="SubjectSpace">
-          <h1 id="Subject">자가 격리 해제</h1>
+        <div class="section_head_subject">
+          <h1 class="s_h_subject">
+            자가 격리 해제
+          </h1>
           </div>
         <div></div>
         <div></div>
         <!-- 본문 -->
-        <div class="ContentSpace">
+        <div class="section_body">
           <br><img src="img\자가 격리 해제_img.png" alt="" width = "300px"><br>
           <p>17일 정오, 장장 14일에 걸친 자가 격리가 끝났다. 그게 겨우 2주였다는 사실을 믿을 수 없을 만큼, 정말이지 내 생에 가장 길었던 2주였다. 그도 그럴 것이, 개 나이에 7을 곱하면 대충 사람 나이라고 하던데, 격리 3일 차 정도부터 기분이 아주 개같았음으로 심리학적으로 따지자면 한 80일 정도 갇혀 지낸 거나 다름없던 것이다.</p>
           <p>날 이곳에 격리시킨 채 생활 치료 센터로 갔던 앞 방 사람은 4일 전에 이곳으로 다시 복귀했다. 나는 그의 복귀 소식을 듣고 그럼 나머지 4일은 자기 방에서 격리하나 보다, 라고 생각했지만, 어이없게도 그는 나보다 먼저 자유의 몸이 되어 이곳으로 복귀한 것이었다. 알고 보니 확진자가 완치 판정을 받으면 그 즉시 격리가 해제된다고.. 이거야 부조리한 세상이었다.</p>
@@ -97,29 +97,11 @@
           <p>메모장을 켰다. 자가 격리 해제, 라고 적었다.</p>
           </div>
           <!-- 사이드바 -->
-        <div class="SidebarSpace">
-          <!-- 카테고리별 -->
-          <span id="Sidebar1">카테고리별 분류<br><br></span>
-          <script>
-            Sidebar_List_AllPosts();
-            Sidebar_List_Category();
-          </script>
-
-          <br>
-          <br>
-          <br>
-          <!-- 월별 -->
-          <span id="Sidebar2">월별 분류<br><br></span>
-          <script>
-            Sidebar_List_YearMonth();
-          </script>
-          </div>
-
-
+        <div class="section_sidebar">
         </div>
-      <div></div>
-      <div class="GridBottom"></div>
-
       </div>
+      <div class="bottom"></div>
+    </div>
+      <script src="javascript/script.js"></script>
   </body>
 </html>

@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ungbi</title>
+    <title></title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="javascript/script.js"></script>
   </head>
   <body>
-    <!-- 바깥쪽 컨테이너 -->
-    <div class = "Container1">
-
+    <div class = "container1">
       <div></div>
-      <!-- 안쪽 컨테이너 -->
-      <div class = "Container2">
+      <div class = "container2">
         <!-- 블로그 이름 -->
-        <div class="BlogNameSpace">
-          <p id = "BlogName"><a href = "index.html" style = "text-decoration: none">ungbi</a></p>
+        <div class="head_blogName">
+          <a href = "index.html" class = "h_blogName"></a>
           </div>
         <div></div>
         <!-- 날짜 -->
-        <div class="DateSpace">
-          <p id="Date">2022년 10월 30일 일요일</p>
+        <div class="section_head_date">
+          <div class="s_h_date">
+            2022년 10월 30일 일요일
+          </div>
           </div>
         <div></div>
         <div></div>
         <!-- 제목 -->
-        <div class="SubjectSpace">
-          <h1 id="Subject">엄마의 고집</h1>
+        <div class="section_head_subject">
+          <h1 class="s_h_subject">
+            엄마의 고집
+          </h1>
           </div>
         <div></div>
         <div></div>
         <!-- 본문 -->
-        <div class="ContentSpace">
+        <div class="section_body">
           <p>언젠가부터 내가 본가에 내려가면, 엄마는 아들 맞이 만찬을 준비하느라 분주했다. 내가 주방을 서성이며 아 이런 거 좀 하지 말라니까~! 그냥 있는 거 대충 먹어요~! 라고 아무리 쫑알대봐도, 엄마는 어우! 정신 사나우니까 저리 좀 가 있어! 라며 날 쫓아버리고는 만찬 준비를 이어갔다.</p>
           <p>대망의 식사 시간이 돌아오고 엄마의 야심작들이 식탁에 놓였다. 식사는 보통 비슷한 레퍼토리로 흘러갔다. 내가 밥을 냠냠 먹고 있으면, 엄마는 뭔가 못마땅한 표정으로 나를 지켜보다 이윽고 잔소리를 시작했다. 너는 엄마가 애써 맛있는 걸 해줘도 꼭 그렇게 맛없게 먹어! 그러니까 살이 안 붙지! 라든가, 다른 집 애들은 집밥 먹고 싶어서 난리라는데 어떻게 된 게 너는 해줘도 먹질 않니! 라거나, 니가 김치를 안 먹으니까 아직도 그렇게 여드름이 나지!(그런가?) 또는, 니가 김치를 안 먹으니까 아빠가 엄마 말을 안 듣지!(글쎄..) 같은 것들이었다.</p>
           <p>식사는 너는 어떻게 남자애가 밥 한 그릇을 다 못 먹어! 라는 잔소리로 마무리됐다. 나는 엄마랑 티격태격해대는 게 재밌기야 했지만, 엄마의 고집은 도통 이해가 되지 않았다. 내가 밥 잘 안 먹는 거야 엄마가 세상에서 가장 잘 알고.. 아니 그러니까 내가 분명히 뭐 하지 말라고도 했고.. 그런데도 굳이 이렇게 음식들을 잔뜩 해놓고는 안 먹는다고 뭐라 그러는지..</p>
@@ -51,30 +51,11 @@
           <br><img src="img\엄마의 고집_img.png" alt="" width = "400px"><br>
           </div>
           <!-- 사이드바 -->
-        <div class="SidebarSpace">
-          <!-- 카테고리별 -->
-          <span id="Sidebar1">카테고리별 분류<br><br></span>
-          <script>
-            Sidebar_List_AllPosts();
-            Sidebar_List_Category();
-          </script>
-
-          <br>
-          <br>
-          <br>
-          <!-- 월별 -->
-          <span id="Sidebar2">월별 분류<br><br></span>
-          <script>
-            Sidebar_List_YearMonth();
-          </script>
-          
-          </div>
-
-
+        <div class="section_sidebar">
         </div>
-      <div></div>
-      <div class="GridBottom"></div>
-
       </div>
+      <div class="bottom"></div>
+    </div>
+      <script src="javascript/script.js"></script>
   </body>
 </html>

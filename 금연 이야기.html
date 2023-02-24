@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ungbi</title>
+    <title></title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="javascript/script.js"></script>
   </head>
   <body>
-    <!-- 바깥쪽 컨테이너 -->
-    <div class = "Container1">
-
+    <div class = "container1">
       <div></div>
-      <!-- 안쪽 컨테이너 -->
-      <div class = "Container2">
+      <div class = "container2">
         <!-- 블로그 이름 -->
-        <div class="BlogNameSpace">
-          <p id = "BlogName"><a href = "index.html" style = "text-decoration: none">ungbi</a></p>
+        <div class="head_blogName">
+          <a href = "index.html" class = "h_blogName"></a>
           </div>
         <div></div>
         <!-- 날짜 -->
-        <div class="DateSpace">
-          <p id="Date">2017년 9월 18일 월요일</p>
+        <div class="section_head_date">
+          <div class="s_h_date">
+            2017년 9월 18일 월요일
+          </div>
           </div>
         <div></div>
         <div></div>
         <!-- 제목 -->
-        <div class="SubjectSpace">
-          <h1 id="Subject">금연 이야기</h1>
+        <div class="section_head_subject">
+          <h1 class="s_h_subject">
+            금연 이야기
+          </h1>
           </div>
         <div></div>
         <div></div>
         <!-- 본문 -->
-        <div class="ContentSpace">
+        <div class="section_body">
+          <br><img src="" alt="" width = "300px"><br>
           <br><img src="img\금연 이야기_img.png" alt="" width = "300px"><br>
           <p>동아 아파트 101동 702호, 우리집이다. 공동 현관에서 출발해 오른쪽으로 1분쯤 걸으면 아파트 쪽문이 나온다.</p>
           <p>쪽문 바깥쪽엔 이차선 도로를 경계로 아파트만큼이나 오래된 상가가 있다. 그 상가에서 가장 구석진 자리에, 카레짱이라는 조그만 일식 카레집이 영업 중이다. 생긴 지는 얼마 안 됐다. 이제 1년 좀 넘었나?</p>
@@ -97,29 +98,11 @@
           <p>지어낸 이야기다. 이번엔 진짜 끊어야지.</p>
           </div>
           <!-- 사이드바 -->
-        <div class="SidebarSpace">
-          <!-- 카테고리별 -->
-          <span id="Sidebar1">카테고리별 분류<br><br></span>
-          <script>
-            Sidebar_List_AllPosts();
-            Sidebar_List_Category();
-          </script>
-
-          <br>
-          <br>
-          <br>
-          <!-- 월별 -->
-          <span id="Sidebar2">월별 분류<br><br></span>
-          <script>
-            Sidebar_List_YearMonth();
-          </script>
-          </div>
-
-
+        <div class="section_sidebar">
         </div>
-      <div></div>
-      <div class="GridBottom"></div>
-
       </div>
+      <div class="bottom"></div>
+    </div>
+      <script src="javascript/script.js"></script>
   </body>
 </html>

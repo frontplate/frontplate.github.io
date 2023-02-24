@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ungbi</title>
+    <title></title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="javascript/script.js"></script>
   </head>
   <body>
-    <!-- 바깥쪽 컨테이너 -->
-    <div class = "Container1">
-
+    <div class = "container1">
       <div></div>
-      <!-- 안쪽 컨테이너 -->
-      <div class = "Container2">
+      <div class = "container2">
         <!-- 블로그 이름 -->
-        <div class="BlogNameSpace">
-          <p id = "BlogName"><a href = "index.html" style = "text-decoration: none">ungbi</a></p>
+        <div class="head_blogName">
+          <a href = "index.html" class = "h_blogName"></a>
           </div>
         <div></div>
         <!-- 날짜 -->
-        <div class="DateSpace">
-          <p id="Date">2022년 12월 21일 수요일</p>
+        <div class="section_head_date">
+          <div class="s_h_date">
+            2022년 12월 21일 수요일
+          </div>
           </div>
         <div></div>
         <div></div>
         <!-- 제목 -->
-        <div class="SubjectSpace">
-          <h1 id="Subject">데자와</h1>
+        <div class="section_head_subject">
+          <h1 class="s_h_subject">
+            데자와
+          </h1>
           </div>
         <div></div>
         <div></div>
         <!-- 본문 -->
-        <div class="ContentSpace">
+        <div class="section_body">
           <br><img src="img\데자와_img.png" alt="" width = "300px"><br>
           <p>데자와를 좋아한다. 데자와 쪽에서는 꽤나 강경한 태도로 자신이 밀크티라 주장하지만, 그렇다고 그래 너 밀크티 맞아, 하고 순순히 인정해주기에는 어째 다소 밍밍한.. 그 미묘한 맛. 생각해보면 나 또한 대학생 때, 그러니까 학생과 성인 사이의 다소 미묘했던 시절 데자와를 만난 까닭에 이런 호감을 가지게 된 걸지도 모르겠다. 음.. 역시 그럴 리는 없으려나. 학내 자판기에선 시중가보다 저렴하게 구매할 수 있었다. 한 캔에 700원쯤 했던 것 같다. 자주 사 마셨다.</p>
           <p>그런데 이럴 수가.. 군대에 다녀오니 학내의 모든 자판기에서 데자와가 사라진 채였다. 나는 동아오츠카 페이스북 페이지에 찾아가 이 사건에 대해 문의했다. 저희 학교 자판기에서 데자와가 멸종됐습니다. 어떻게 된 일인가요? 동아오츠카에게서 답변이 왔다. 자판기 사업자 입찰에서 롯데칠성에 밀렸다고.. 그러고 보니 자판기 안의 모든 음료가 롯데칠성의 제품이었다. 이제 학내 자판기에서 싱싱한 데자와를 만날 수 없게 된 것이다. 비통한 심정이었다.</p>
@@ -42,29 +42,11 @@
           <p>계획에도 없던 데자와 타령을 하고 있자니 데자와가 마시고 싶어진다. 얼른 나가서 하나 사 와야지. 물론 슈퍼에서.</p>
           </div>
           <!-- 사이드바 -->
-        <div class="SidebarSpace">
-          <!-- 카테고리별 -->
-          <span id="Sidebar1">카테고리별 분류<br><br></span>
-          <script>
-            Sidebar_List_AllPosts();
-            Sidebar_List_Category();
-          </script>
-
-          <br>
-          <br>
-          <br>
-          <!-- 월별 -->
-          <span id="Sidebar2">월별 분류<br><br></span>
-          <script>
-            Sidebar_List_YearMonth();
-          </script>
-          </div>
-
-
+        <div class="section_sidebar">
         </div>
-      <div></div>
-      <div class="GridBottom"></div>
-
       </div>
+      <div class="bottom"></div>
+    </div>
+      <script src="javascript/script.js"></script>
   </body>
 </html>

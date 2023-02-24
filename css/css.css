@@ -10,11 +10,16 @@
 }
 
 @font-face {
-font-family: 'D2Coding';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
-font-weight: normal;
-font-style: normal;
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+/* div{
+  border: 1px solid;
+} */
 
 body{
   font: 13px 'Arial';
@@ -38,92 +43,115 @@ a:hover{
   text-decoration: underline;
 }
 
-.Container1{
+.container1{
   display: grid;
   grid-template-columns: 1fr 820px 1fr;
+  /* grid-template-columns: 1fr 900px 1fr; */
+
   grid-template-rows: 1fr 1fr;
 }
 
-.mac .Container1{
+.mac .container1{
   display: grid;
   grid-template-columns: 1fr 800px 1fr;
+  /* grid-template-columns: 1fr 880px 1fr; */
   grid-template-rows: 1fr 1fr;
 }
 
-.GridBottom{
+.bottom{
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
-.Container2{
+.container2{
   display: grid;
   grid-template-columns: 175px 470px 175px;
+  /* grid-template-columns: 175px 550px 175px; */
   grid-template-rows: 150px 25px 30px 1fr;
 }
 
-.mac .Container2{
+.mac .container2{
   display: grid;
   grid-template-columns: 175px 450px 175px;
-  grid-template-rows: 150px 25px 30px 1fr;
+  /* grid-template-columns: 175px 530px 175px; */
+  grid-template-rows: 130px 25px 30px 1fr;
 }
 
-.BlogNameSpace{
+.head_blogName{
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
-.DateSpace{
-  padding: 10px 20px;
+.section_head_date{
+  padding: 10px 21px;
+  /* padding: 10px 11px; */
+
 }
 
-.SubjectSpace{
+.mac .section_head_date{
+  padding: 10px 41px;
+}
+
+.section_head_subject{
   padding: 0px 20px;
+  /* padding: 0px 10px; */
+
 }
 
-.mac .DateSpace{
-  padding: 10px 40px;
-}
-
-.mac .SubjectSpace{
+.mac .section_head_subject{
   padding: 0px 40px;
 }
 
-.ContentSpace{
+.section_body{
   padding: 10px 20px;
-  /* font: 400 13px 'Nanum Myeongjo', serif; */
-  /* font: 12px '굴림'; */
   font: 13px 'YESMyoungjo-Regular';
   letter-spacing: 0.5px;
-  line-height: 140%;
+  line-height: 150%;
 }
 
-.mac .ContentSpace{
+.mac .section_body{
   padding: 10px 40px;
   font-family: 'menlo', 'Arial';
   font-size: 12px;
-  letter-spacing: -0.5px;
-  line-height: 140%;
+  letter-spacing: -0.02rem;
+  line-height: 150%;
 }
 
-.SidebarSpace{
+.section_sidebar{
   padding-top: 23px;
   padding-left: 50px;
   font-size: 12px;
 }
 
-.mac .SidebarSpace{
+.mac .section_sidebar{
   padding-top: 23px;
   padding-left: 30px;
   font-size: 11px;
 }
 
-#BlogName{
-  font: 40px 'Archivo Black', sans-serif;
-  margin-top: 30px;
-  margin-left: 70px;
+.h_blogName{
+  /* font: 40px 'Archivo Black', sans-serif; */
+  /* margin-top: 30px; */
+  /* margin-left: 70px; */
+  margin-top: 60px;
+  margin-left: 140px;
+  display: inline-block;
 }
 
-#Date{
+.mac .h_blogName{
+  /* font: 40px 'Archivo Black', sans-serif; */
+  /* margin-top: 30px; */
+  /* margin-left: 70px; */
+  margin-top: 60px;
+  margin-left: 160px;
+  display: inline-block;
+}
+
+.h_blogName:hover{
+  text-decoration: none;
+}
+
+.s_h_date{
   display: inline;
   background-color: rgb(187, 187, 187);
   color: white;
@@ -132,7 +160,7 @@ a:hover{
   padding: 4px 5px;
 }
 
-.mac #Date{
+.mac .s_h_date{
   display: inline;
   background-color: rgb(187, 187, 187);
   color: white;
@@ -141,21 +169,32 @@ a:hover{
   padding: 3.5px 4.5px;
 }
 
-#Subject{
+.s_h_subject{
   font: bold 20px Arial;
 }
 
-.mac #Subject{
+.mac .s_h_subject{
   display: inline-block;
   font: bold 19px Arial;
 }
 
-#Sidebar1{
-  font-weight: bold;
+.s_s_byCategory_subject{
+  font: bold 12px Arial;
 }
 
-#Sidebar2{
-  font-weight: bold;
+.s_s_byDate_subject{
+  font: bold 12px Arial;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+/* .mac .ContentSpace{
+  font-family: "Arial";
+  font-size: 12.5px;
+
 }
 
 .Pagination button{
@@ -171,15 +210,4 @@ input{
 
 .active{
   font-weight: bold;
-}
-
-img {
-  margin: auto;
-  display: block;
-}
-
-/* .mac .ContentSpace{
-  font-family: "Arial";
-  font-size: 12.5px;
-
 } */

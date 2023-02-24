@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ungbi</title>
+    <title></title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="javascript/script.js"></script>
   </head>
   <body>
-    <!-- 바깥쪽 컨테이너 -->
-    <div class = "Container1">
-
+    <div class = "container1">
       <div></div>
-      <!-- 안쪽 컨테이너 -->
-      <div class = "Container2">
+      <div class = "container2">
         <!-- 블로그 이름 -->
-        <div class="BlogNameSpace">
-          <p id = "BlogName"><a href = "index.html" style = "text-decoration: none">ungbi</a></p>
+        <div class="head_blogName">
+          <a href = "index.html" class = "h_blogName"></a>
           </div>
         <div></div>
         <!-- 날짜 -->
-        <div class="DateSpace">
-          <p id="Date">2022년 8월 28일 일요일</p>
+        <div class="section_head_date">
+          <div class="s_h_date">
+            2022년 8월 28일 일요일
+          </div>
           </div>
         <div></div>
         <div></div>
         <!-- 제목 -->
-        <div class="SubjectSpace">
-          <h1 id="Subject">용식이와 형설지공 대작전</h1>
+        <div class="section_head_subject">
+          <h1 class="s_h_subject">
+            용식이와 형설지공 대작전
+          </h1>
           </div>
         <div></div>
         <div></div>
         <!-- 본문 -->
-        <div class="ContentSpace">
+        <div class="section_body">
           <br><img src="img\용식이와 형설지공 대작전_img.png" alt="" width = "300px"><br>
           <p>나와 용식이는 고3이었다. 수능이 벌써 몇 달 앞으로 다가왔지만, 우리의 성적은 여전히 애매한 곳에서 맴돌고 있었다. 이거야 대학이 아니라 재수 학원에 가까워지고 있다는 느낌이었다. 이 짓을 1년 더.. 어우 절대 싫었다. 불안에 휩싸인 나는 아주 가끔 기숙사 밖으로 나가 엄마에게 전화를 걸었다. 그리곤 엉엉 울었다.</p>
           <p>용식이의 경우 각종 공부 에세이에 집착하기 시작했다. 집에 갔다가 기숙사로 복귀하는 일요일 저녁이면, 매번 새로운 책에서 감명받은 부분을 얘기해줬다. 누구는 밥 먹는 시간도 아까워서 밥이랑 반찬을 믹서로 갈아 마셨다더라, 민사고 애들은 기숙사 불 꺼지면 화장실에서 공부한다더라, 같은 것들이었다. 밥을 갈아 먹다니 그런 미친놈도 있나 싶었지만, 용식이의 말을 듣다 보면 우리에게도 뭔가 특단의 조치가 있긴 해야겠다는 생각이 들었다.</p>
@@ -94,29 +94,11 @@
           <p>그날 이후 우리는 한 번 더 새벽 공부를 감행했지만, 벌레 트라우마로 인한 집중력 장애를 이겨내지 못한 채 몇 분 못 가 포기해버렸다. 그리곤 그냥 학교에서 시키는 대로나 잘하기로 했다.</p>
           </div>
           <!-- 사이드바 -->
-        <div class="SidebarSpace">
-          <!-- 카테고리별 -->
-          <span id="Sidebar1">카테고리별 분류<br><br></span>
-          <script>
-            Sidebar_List_AllPosts();
-            Sidebar_List_Category();
-          </script>
-
-          <br>
-          <br>
-          <br>
-          <!-- 월별 -->
-          <span id="Sidebar2">월별 분류<br><br></span>
-          <script>
-            Sidebar_List_YearMonth();
-          </script>
-          </div>
-
-
+        <div class="section_sidebar">
         </div>
-      <div></div>
-      <div class="GridBottom"></div>
-
       </div>
+      <div class="bottom"></div>
+    </div>
+      <script src="javascript/script.js"></script>
   </body>
 </html>
