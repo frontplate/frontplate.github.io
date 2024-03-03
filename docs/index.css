@@ -1,5 +1,10 @@
+@font-face {
+  font-family: MySam3KRFont;
+  src: url(./SAM3KRFONT.TTF);
+}
+
 html {
-  font-family: "Sam3KRFont";
+  font-family: "MySam3KRFont";
   font-size: 18px;
   line-height: 1.2;
 }
