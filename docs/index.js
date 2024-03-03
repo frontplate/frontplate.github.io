@@ -1,14 +1,15 @@
 const textarea = document.querySelector(".textarea");
 const dateBox = document.querySelector(".date");
 
-const date = new Date();
-dateBox.textContent = date.toString();
-
-window.addEventListener("load", focusTextarea);
+window.addEventListener("load", 초기화);
 textarea.addEventListener("focus", borderOff);
 textarea.addEventListener("blur", borderOn);
+textarea.addEventListener("keyup", resetDate);
 
-function focusTextarea() {
+function 초기화() {
+  const date = new Date();
+  dateBox.textContent = date.toString();
+
   textarea.focus();
 }
 
@@ -22,4 +23,9 @@ function borderOn() {
   }
 
   textarea.style.border = "1px solid";
+}
+
+function resetDate() {
+  const date = new Date();
+  dateBox.textContent = date.toString();
 }
